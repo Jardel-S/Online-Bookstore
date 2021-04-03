@@ -10,40 +10,98 @@
 }
 
 * {
-    font-size: 100%;
+    font-size: 0.9rem;
     font-family: PoppinsRegular;
 }
 
 body {
     margin: 0px;
-    height: 100%;
 }
 
-.cabecalho {
+.fhead {
     display: flex;
-    padding: 30px 8px;
-    height: 25px;
-    width: 100%;
+    height: 64px;
     background-color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo a {
-    width: 168;
-    height: 28;
-    float: left;
-    padding-right: 10px;
+.fhead1 {
+    display: flex;
+}
+
+#logo a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    padding-top: 5px;
 }
 
 .search {
     display: flex;
-    height: 36px;
-    border-radius: 6px;
+    height: 39px;
+    margin-right: 84px;
 }
 
 .search input {
+    height: 100%;
     display: flex;
-    border-radius: 6px 6px 6px 6px;
-    width: 500px;
+    border-radius: 6px 0px 0px 6px;
+    width: 700px;
+    border: none;
+    outline-style: none;
+    padding-left: 14px;
+}
+
+.search button {
+    background-color: white;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    outline-style: none;
+}
+
+.search button i {
+    font-size: 20px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+#cadastro {
+    margin-right: 4px;
+    padding-top: 2px;
+}
+
+#cadastro p {
+    align-items: center;
+    justify-content: center;
+}
+
+#favorito {
+    margin-right: 15px;
+    padding-top: 2px;
+}
+
+#cadastro a i {
+    font-size: 30px;
+    color: #000;
+}
+
+#favorito a i {
+    color: #000;
+    font-size: 30px;
+}
+
+#carrinho a i {
+    color: #000;
+    font-size: 27px;
 }
 
 a {
@@ -52,4 +110,73 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.inner {
+    max-width: 1362px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegation {
+    height: 57px;
+    background-color: rgb(228, 228, 228);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.subheader {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.categoria spam {
+    display: inline-flex;
+    align-items: center;
+}
+
+.categoria a i {
+    color: #000;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.infos1 {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+@media only screen and (max-width:900px) {
+    .cabecalho {
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        width: 28%;
+    }
+    img {
+        max-width: 100%;
+    }
+    #logo a {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:1025px) {
+    .cabecalho {
+        background-color: rgb(255, 0, 140);
+    }
+    .navegation {
+        background-color: rgb(255, 0, 140);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        background-color: lightblue;
+    }
+    .navegation {
+        display: none;
+    }
 }
